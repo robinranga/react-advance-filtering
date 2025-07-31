@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+label input:checked ~ .checkbox {
+    background-color: #2196f3;
+}
+
+label input:checked ~ .checkbox::after{
+    display: block;
+}
+
+.checkbox::after {
+    position: absolute;
+    display: none;
+    content: "";
+    
+}
+
+label:hover input ~ .checkbox{
+    background-color: #828080;
+}
+
+label .checkbox::after{
+    top: 9.6px;
+    left : 3.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+
+}
